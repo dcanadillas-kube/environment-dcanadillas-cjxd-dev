@@ -38,8 +38,8 @@ environments:
   key: production
 gitops: true
 ingress:
-  domain: 34.77.235.88.nip.io
-  externalDNS: false
+  domain: cjxd.dcanadillas.com
+  externalDNS: true
   namespaceSubDomain: -jx.
   tls:
     email: ""
