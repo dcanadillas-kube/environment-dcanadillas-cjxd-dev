@@ -1,11 +1,8 @@
 cluster:
-  clusterName: dcanadillas-cjxd
-  environmentGitOwner: dcanadillas-kube
-  gitKind: github
-  gitName: github
-  gitServer: https://github.com
-  namespace: jx
-  project: emea-sa-demo
+  clusterName: ""
+  environmentGitOwner: ""
+  environmentGitPublic: true
+  project: ""
   provider: gke
   zone: europe-west1-c
 environments:
