@@ -1,0 +1,11 @@
+apiVersion: jenkins.io/v1
+kind: App
+metadata:
+  annotations:
+    jenkins.io/chart-description: UI for the CloudBees Jxui V3 product
+    jenkins.io/chart-repository: https://charts.cloudbees.com/cjxd/cloudbees
+  creationTimestamp: null
+  labels:
+    jenkins.io/app-name: jx-app-ui
+    jenkins.io/app-version: 0.0.42
+spec: {}
