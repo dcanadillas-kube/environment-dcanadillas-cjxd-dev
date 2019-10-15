@@ -2,16 +2,19 @@ dependencies:
 - alias: tekton
   name: tekton
   repository: http://chartmuseum.jenkins-x.io
+  version: 0.0.42
 - alias: prow
   condition: prow.enabled
   name: prow
   repository: http://chartmuseum.jenkins-x.io
+  version: 0.0.42
 - alias: lighthouse
   condition: lighthouse.enabled
   name: lighthouse
   repository: http://chartmuseum.jenkins-x.io
+  version: 0.0.42
 - name: jenkins-x-platform
   repository: http://chartmuseum.jenkins-x.io
 - name: jx-app-ui
   repository: https://charts.cloudbees.com/cjxd/cloudbees
-  version: 0.0.57
+  version: 0.0.63
