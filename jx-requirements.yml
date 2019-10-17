@@ -53,13 +53,13 @@ storage:
     url: ""
   logs:
     enabled: true
-    url: dcanadillas-cjxd-logs
+    url: gs://dcanadillas-cjxd-logs
   reports:
     enabled: true
-    url: dcanadillas-cjxd-logs
+    url: gs://dcanadillas-cjxd-logs
   repository:
     enabled: true
-    url: dcanadillas-cjxd-logs
+    url: gs://dcanadillas-cjxd-logs
 velero: {}
 versionStream:
   ref: 224d65a9452e04c1f8eb33f2d87db2df03a46c4d
