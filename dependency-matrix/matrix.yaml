@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: WorkshopCB
+  repo: petclinic-kaniko-jx
+  url: https://github.com/WorkshopCB/petclinic-kaniko-jx.git
+  version: ""
+  versionURL: ""
