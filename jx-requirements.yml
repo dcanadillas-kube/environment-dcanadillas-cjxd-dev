@@ -3,11 +3,14 @@ autoUpdate:
   schedule: ""
 cluster:
   azure: {}
+  clusterName: dcanadillas-cjxd
+  environmentGitOwner: dcanadillas-kube
   environmentGitPublic: true
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx
+  project: emea-sa-demo
   provider: gke
   zone: europe-west1-c
 environments:
@@ -38,6 +41,7 @@ environments:
       enabled: false
       production: false
   key: production
+gitops: true
 ingress:
   domain: cjxd.dcanadillas.com
   externalDNS: true
