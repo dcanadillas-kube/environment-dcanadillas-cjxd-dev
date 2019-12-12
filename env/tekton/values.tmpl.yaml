@@ -1,3 +1,11 @@
+{{- if eq .Requirements.webhook "prow" }}
+enabled: true
+{{- else if eq .Requirements.webhook "lighthouse" }}
+enabled: true
+{{- else }}
+enabled: false
+{{- end }}
+
 webhook:
   enabled: false
 
@@ -6,7 +14,6 @@ auth:
     username: "{{ .Parameters.pipelineUser.username }}"
     password: "{{ .Parameters.pipelineUser.token }}"
     url: {{ .Requirements.cluster.gitServer | default "https://github.com" }}
-
 {{- if hasKey .Parameters "docker" }}
 docker:
   username: "{{ .Parameters.docker.username }}"
