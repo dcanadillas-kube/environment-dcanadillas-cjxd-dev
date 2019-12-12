@@ -20,4 +20,4 @@ dependencies:
   repository: http://chartmuseum.jenkins-x.io
 - name: jx-app-ui
   repository: https://charts.cloudbees.com/cjxd/cloudbees
-  version: 0.0.68
+  version: 0.1.29
