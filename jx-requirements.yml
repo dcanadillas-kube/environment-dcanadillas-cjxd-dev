@@ -2,17 +2,42 @@ autoUpdate:
   enabled: false
   schedule: ""
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  environmentGitPublic: true
-  project: ""
   azure: {}
+  environmentGitPublic: true
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
   provider: gke
   zone: europe-west1-c
 environments:
-  - key: dev
-  - key: staging
-  - key: production
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
 ingress:
   domain: cjxd.dcanadillas.com
   externalDNS: true
@@ -22,6 +47,7 @@ ingress:
     enabled: false
     production: false
 kaniko: true
+repository: nexus
 secretStorage: vault
 storage:
   backup:
@@ -36,8 +62,9 @@ storage:
   repository:
     enabled: true
     url: gs://dcanadillas-cjxd-logs
+vault: {}
 velero: {}
 versionStream:
-  ref: 2.0.1005+cjxd.5
+  ref: 36b34efde2a3d8f8b734bef94350802681e2b223
   url: https://github.com/cloudbees/cloudbees-jenkins-x-versions.git
 webhook: prow
