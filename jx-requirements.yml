@@ -67,8 +67,10 @@ storage:
     enabled: true
     url: gs://dcanadillas-cjxd-logs
 vault: {}
-velero: {}
+velero:
+  schedule: ""
+  ttl: ""
 versionStream:
-  ref: 2.0.1139+cjxd.6
+  ref: a709508becc56751ea90dbdfe10a1173838d46be
   url: https://github.com/cloudbees/cloudbees-jenkins-x-versions.git
 webhook: prow
