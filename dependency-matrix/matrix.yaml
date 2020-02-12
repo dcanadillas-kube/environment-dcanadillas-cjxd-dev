@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/WorkshopCB/petclinic-kaniko.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: dcanadillas
+  repo: node-jx-test
+  url: https://github.com/dcanadillas/node-jx-test.git
+  version: ""
+  versionURL: ""
