@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/dcanadillas/node-jx-test.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jx-dcanadillas
+  repo: petclinic-jenkins-x
+  url: https://github.com/jx-dcanadillas/petclinic-jenkins-x.git
+  version: ""
+  versionURL: ""
